@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turkmaniston milliy taomlari</title>
+<style>
+  :root {
+    --red: #8c1d1d;
+    --red-dark: #5c1010;
+    --gold: #d9a441;
+    --cream: #fbf5e9;
+    --ink: #2b1d17;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.65;
+  }
+  .carpet {
+    height: 14px;
+    background: repeating-linear-gradient(90deg,
+      var(--red) 0 24px, var(--gold) 24px 32px,
+      var(--red-dark) 32px 56px, var(--gold) 56px 64px);
+  }
+  header {
+    background: radial-gradient(circle at 20% 20%, #a52a2a, var(--red-dark));
+    color: #fff;
+    text-align: center;
+    padding: 70px 20px 60px;
+  }
+  header h1 { font-size: clamp(2rem, 6vw, 3.6rem); letter-spacing: 1px; }
+  header p { max-width: 640px; margin: 16px auto 0; color: #f1dfc0; font-size: 1.1rem; }
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--red-dark);
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px;
+    padding: 10px 12px;
+    border-bottom: 3px solid var(--gold);
+  }
+  nav a { color: #f6e7c8; text-decoration: none; font-size: .95rem; padding: 4px 6px; }
+  nav a:hover { color: var(--gold); }
+  main { max-width: 1100px; margin: 0 auto; padding: 40px 18px 20px; }
+  .intro { max-width: 760px; margin: 0 auto 40px; text-align: center; font-size: 1.08rem; }
+  .intro h2 { color: var(--red); margin-bottom: 10px; font-size: 1.8rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(60, 20, 10, .12);
+    border-top: 5px solid var(--gold);
+    transition: transform .2s ease, box-shadow .2s ease;
+    scroll-margin-top: 70px;
+  }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 8px 22px rgba(60, 20, 10, .2); }
+  .emoji { font-size: 3rem; padding: 18px 20px 0; }
+  .card-body { padding: 8px 22px 22px; }
+  .card h3 { color: var(--red); font-size: 1.4rem; }
+  .local { color: #8a6d3b; font-style: italic; font-size: .92rem; margin-bottom: 8px; }
+  .tag {
+    display: inline-block; margin-top: 10px;
+    background: #f4e3bd; color: var(--red-dark);
+    font-size: .8rem; padding: 3px 10px; border-radius: 20px;
+  }
+  .facts {
+    margin: 50px 0 20px;
+    background: var(--red-dark); color: #f6e7c8;
+    border-radius: 14px; padding: 30px 28px;
+  }
+  .facts h2 { color: var(--gold); margin-bottom: 14px; }
+  .facts ul { padding-left: 22px; }
+  .facts li { margin-bottom: 8px; }
+  footer { text-align: center; padding: 30px 18px 40px; color: #6b5a50; font-size: .92rem; }
+</style>
+</head>
+<body>
+
+<div class="carpet"></div>
+<header>
+  <h1>Turkmaniston milliy taomlari</h1>
+  <p>Cho'l, qo'y go'shti, non va mehmondo'stlik an'analari uyg'unlashgan qadimiy turkman oshxonasi bilan tanishing.</p>
+</header>
+
+<nav>
+  <a href="#palow">Palov</a>
+  <a href="#dograma">Dograma</a>
+  <a href="#ishlekli">Ishlekli</a>
+  <a href="#gutap">Gutap</a>
+  <a href="#manty">Manti</a>
+  <a href="#chekdirme">Chekdirme</a>
+  <a href="#fitchi">Fitchi</a>
+  <a href="#pishme">Pishme</a>
+  <a href="#chal">Chal</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Oshxona haqida</h2>
+    <p>Turkman oshxonasi ko'chmanchi chorvadorlar hayoti bilan chambarchas bog'liq. Asosiy mahsulotlar: qo'y go'shti, un, sabzi, piyoz, sut mahsulotlari va mavsumiy sabzavotlar. Taomlar ko'pincha qozonda yoki tandirda tayyorlanadi, dasturxonda esa albatta issiq non va choy bo'ladi.</p>
+  </section>
+
+  <section class="grid">
+
+    <article class="card" id="palow">
+      <div class="emoji">🍚</div>
+      <div class="card-body">
+        <h3>Palov</h3>
+        <div class="local">turkmancha: palaw</div>
+        <p>Qo'y go'shti, sabzi, piyoz va guruchdan qozonda pishiriladigan to'yimli taom. Turkman palovi bayramlar va mehmon kutishlarning asosiy taomi hisoblanadi.</p>
+        <span class="tag">Asosiy taom</span>
+      </div>
+    </article>
+
+    <article class="card" id="dograma">
+      <div class="emoji">🍲</div>
+      <div class="card-body">
+        <h3>Dograma</h3>
+        <div class="local">turkmancha: dograma</div>
+        <p>Qo'y go'shti sho'rvasiga maydalab solingan non bilan tayyorlanadigan quyuq taom. Nomi "to'g'ralgan" degan ma'noni bildiradi.</p>
+        <span class="tag">Sho'rva</span>
+      </div>
+    </article>
+
+    <article class="card" id="ishlekli">
+      <div class="emoji">🥧</div>
+      <div class="card-body">
+        <h3>Ishlekli</h3>
+        <div class="local">turkmancha: işlekli</div>
+        <p>Go'sht va piyoz solingan yumaloq yopiq pirog. Tandirda yoki tovada pishiriladi, issiq holda yeyiladi.</p>
+        <span class="tag">Xamir taom</span>
+      </div>
+    </article>
+
+    <article class="card" id="gutap">
+      <div class="emoji">🥟</div>
+      <div class="card-body">
+        <h3>Gutap</h3>
+        <div class="local">turkmancha: gutap</div>
+        <p>Yupqa xamirga ko'kat, qovoq yoki go'sht solib, yarim oy shaklida moyda qovuriladigan chuchvarasimon yassi pishiriq.</p>
+        <span class="tag">Xamir taom</span>
+      </div>
+    </article>
+
+    <article class="card" id="manty">
+      <div class="emoji">🥟</div>
+      <div class="card-body">
+        <h3>Manti</h3>
+        <div class="local">turkmancha: mänti</div>
+        <p>Go'sht va piyoz solingan, bug'da pishiriladigan yirik xamir taom. Odatda qatiq yoki sariyog' bilan beriladi.</p>
+        <span class="tag">Bug'da pishirilgan</span>
+      </div>
+    </article>
+
+    <article class="card" id="chekdirme">
+      <div class="emoji">🍖</div>
+      <div class="card-body">
+        <h3>Chekdirme</h3>
+        <div class="local">turkmancha: çekdirme</div>
+        <p>Mayda to'g'ralgan qo'y go'shtini piyoz bilan qovurib tayyorlanadigan issiq taom. Non yoki palov bilan yeyiladi.</p>
+        <span class="tag">Go'shtli taom</span>
+      </div>
+    </article>
+
+    <article class="card" id="fitchi">
+      <div class="emoji">🥘</div>
+      <div class="card-body">
+        <h3>Fitchi</h3>
+        <div class="local">turkmancha: fitçi</div>
+        <p>Go'sht va yog' solingan qalin xamirli pishiriq. To'yimli bo'lgani uchun uzoq yo'lga chiqqanlar uchun ham tayyorlangan.</p>
+        <span class="tag">Xamir taom</span>
+      </div>
+    </article>
+
+    <article class="card" id="pishme">
+      <div class="emoji">🍩</div>
+      <div class="card-body">
+        <h3>Pishme</h3>
+        <div class="local">turkmancha: pişme</div>
+        <p>Xamirdan yoyilib, qizigan yog'da qovuriladigan yumshoq non. Ertalabki nonushta va choy bilan yaxshi ketadi.</p>
+        <span class="tag">Non / shirinlik</span>
+      </div>
+    </article>
+
+    <article class="card" id="chal">
+      <div class="emoji">🥛</div>
+      <div class="card-body">
+        <h3>Chal</h3>
+        <div class="local">turkmancha: çal</div>
+        <p>Tuya sutidan achitib tayyorlanadigan, biroz nordon va ko'pikli sut ichimligi. Cho'l hududlarida sevib ichiladi.</p>
+        <span class="tag">Ichimlik</span>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="facts">
+    <h2>Qiziqarli faktlar</h2>
+    <ul>
+      <li>Turkmanistonda har yili avgustda Qovun bayrami nishonlanadi, turkman qovunlari mamlakatning faxri hisoblanadi.</li>
+      <li>Dasturxon odatda yangi non va yashil yoki qora choy bilan boshlanadi.</li>
+      <li>Ko'pgina taomlar qozonda va tandirda pishiriladi.</li>
+      <li>Qo'y go'shti turkman oshxonasining eng asosiy go'shti hisoblanadi.</li>
+    </ul>
+  </section>
+</main>
+
+<div class="carpet"></div>
+<footer>Yoqimli ishtaha! · Turkmaniston milliy taomlari</footer>
+
+</body>
+</html>
